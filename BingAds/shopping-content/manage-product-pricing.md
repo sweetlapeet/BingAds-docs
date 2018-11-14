@@ -19,7 +19,7 @@ If all you need to do is update the pricing and availability of a product in you
 
 ## Updating a single product
 
-To update a single product, use the `/bmc/{bmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}` template in an HTTP POST request. Set {bmcMerchantId} to your store ID, {storeCode} to *online*, and {productUniqueId} to the product's fully qualified ID.
+To update a single product, use the `/bmc/{bmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}` template in an HTTP POST request. Set {bmcMerchantId} to your store ID, {storeCode} to *online* only (LIA not supported), and {productUniqueId} to the product's fully qualified ID.
 
 The request's body is a [Product](inventory-resource.md#product) object that includes the following fields only:
 
@@ -96,7 +96,7 @@ For example code that shows how to use the Inventory resource to update a single
 
 To update multiple products, use the `/bmc/{bmcMerchantId}/inventory/batch` template in an HTTP POST request. Set {bmcMerchantId} to your store ID.
 
-The request's body is a [Batch](inventory-resource.md#batch) object that may contain a maximum of 400 products to update. Each entry in the batch provides a user-defined batch ID, a store code that's set to *online*, the product's fully qualified ID, and the product's pricing and availability fields to update. The [Product](inventory-resource.md#product) object may include the following fields only: 
+The request's body is a [Batch](inventory-resource.md#batch) object that may contain a maximum of 400 products to update. Each entry in the batch provides a user-defined batch ID, a store code that must be set to *online* only (LIA not supported), the product's fully qualified ID, and the product's pricing and availability fields to update. The [Product](inventory-resource.md#product) object may include the following fields only: 
 
 - price
 - availability

@@ -33,7 +33,7 @@ To create the endpoints used to update your product offerings, append the approp
 |Template|HTTP Verb|Description
 |--------|---------|-----------
 |/bmc/{bmcMerchantId}/inventory/batch|POST|Use to perform multiple product pricing updates in a single request.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Request object: [Batch](#batch)<br>Response object: [Batch](#batch) 
-|/bmc/{bmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}|POST|Use to update pricing and availability of a single product.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{storeCode}` to online.<br/><br/>Set `{productUniqueId}` to the fully qualified product [ID](#productid) (for example, Online:en:US:Sku123).<br/><br/>Request object: [Product](#product)<br>Response object: [Product](#product)
+|/bmc/{bmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}|POST|Use to update pricing and availability of a single product.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{storeCode}` to online only (LIA not supported).<br/><br/>Set `{productUniqueId}` to the fully qualified product [ID](#productid) (for example, Online:en:US:Sku123).<br/><br/>Request object: [Product](#product)<br>Response object: [Product](#product)
 
 ## <a name="queryparameters"/> Query parameters
 
@@ -134,7 +134,7 @@ Defines an entry in a batch request.
 |inventory|The updated price and availability.|[Product](#product)
 |merchantId|The Merchant Center store ID. Because the URL includes the store ID, Bing ignores this field.|Unsigned Long
 |productId|The fully qualified product ID (for example, Online:en:US:Sku123) of the product to update. Do not include multiple entries with the same product ID.|String
-|storeCode|The code that identifies the store to update. Set to *online* to update price and availability of products in the online store.|String
+|storeCode|The code that identifies the store to update. Must be set to *online* only (LIA not supported).|String
 
 ### <a name="product"/>Product
 
