@@ -452,9 +452,11 @@ Your ad language setting determines the language you will use when you write you
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
 
-For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). Each language in the bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
+The supported language strings for Search and Shopping campaigns are: All, Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese. Each language in this bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one language string in this field set to "All" if you want to target all languages.
 
-For Audience campaigns you must include all languages i.e., set this field to *All*. 
+For Audience campaigns you must include all languages i.e., set this field to All.
+
+For Dynamic Search Ads campaigns, only English is supported.
 
 **Add:** Required for Audience campaigns, and otherwise this field is optional. If there is no campaign language set, then the language of each ad group within the campaign will be required.   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
