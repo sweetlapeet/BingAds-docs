@@ -11,8 +11,6 @@ dev_langs:
 # Sitelink Ad Extension Record - Bulk
 Defines a sitelink ad extension that can be downloaded and uploaded in a bulk file.
 
-The *Sitelink Ad Extension* record adheres to the single sitelink data model, where each Sitelink Ad Extension has *one* sitelink. The entire Sitelink Ad Extension is represented as a single *Sitelink Ad Extension* record in the bulk file.
-
 You can associate a sitelink ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 sitelink ad extensions. Use the [Account Sitelink Ad Extension](account-sitelink-ad-extension.md), [Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md), and [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) records to manage sitelink ad extension associations.
 
 You can download all *Sitelink Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *SitelinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
