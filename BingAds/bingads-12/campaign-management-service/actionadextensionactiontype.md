@@ -9,7 +9,7 @@ description: Defines the possible options for action text that can be displayed 
 # ActionAdExtensionActionType Value Set - Campaign Management
 Defines the possible options for action text that can be displayed in an action ad extension. 
 
-The displayed action text will vary depending on the [Language](actionadextension.md#language) that you define in your [ActionAdExtension](actionadextension.md). For example if you choose [ActNow](#actnow) from the values below, and set the action ad extension [Language]](actionadextension.md) to *German*, the displayed action text is *Jetzt handeln*. For details about display action text per language see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).
+The displayed action text will vary depending on the [Language](actionadextension.md#language) that you define in your [ActionAdExtension](actionadextension.md). For example if you choose [ActNow](#actnow) from the values below, and set the action ad extension [Language](actionadextension.md) to *German*, the displayed action text is *Jetzt handeln*. For details about display action text per language see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).
 
 ## Syntax
 ```xml

@@ -95,16 +95,15 @@ Swedish,Bekvämligheter,Varumärken,Kurser,Utbildningar,Resmål,Hotellval,Varor,
 ## <a name="actionadextension-actiontext"></a>Action Text for Action Ad Extensions
 The action text displayed for action ad extensions will depend on the language that you set when creating or updating the action ad extension. For example, if you want action text displayed as *Act Now* in English you must specify the action text as *ActNow* and set the language to *English*. If you want action text displayed as *Jetzt handeln* in German you must likewise set the action text to *ActNow*, but set the language to *German*. 
 
-> [!NOTE]
-> Bing Ads does not support all action types for all languages. This table lists the rare exceptions.
-> 
-> |Language|Action Types Not Supported| 
-> |-----|-----|
-> |Dutch|PostJob|
-> |French|NewCars,TestDrive,UsedCars,ViewCars|
-> |German|FreePlay,FreeQuote,FreeTrial,StartFree,UsedCars|
-> |Italian|FreeQuote|
-> |Norwegian|FreeTrial|
+Bing Ads does not support all action types for all languages. This table lists the rare exceptions.
+
+|Language|Action Types Not Supported| 
+|-----|-----|
+|Dutch|PostJob|
+|French|NewCars,TestDrive,UsedCars,ViewCars|
+|German|FreePlay,FreeQuote,FreeTrial,StartFree,UsedCars|
+|Italian|FreeQuote|
+|Norwegian|FreeTrial|
 
 When using the Bing Ads API you will always set the action type using an English pascal case enumeration value i.e., one of the language strings in the first comma separated row below. The language translations are documented for your convenience, although you will never use them directly via the Bing Ads API. 
 
