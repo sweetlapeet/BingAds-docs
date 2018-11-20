@@ -278,7 +278,7 @@ namespace Content.OAuth
 
         private void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
-            Dictionary\<string, string> parameters = null;
+            Dictionary<string, string> parameters = null;
 
             if (!string.IsNullOrEmpty(e.Url.Query))
             {
